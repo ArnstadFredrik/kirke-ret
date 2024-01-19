@@ -3,6 +3,8 @@ import makePayload from '../utils/makePayload.js'
 
 const getDays = startYear => {
   const christmasEve = getChristmasEve(startYear)
+  const christmasDay = christmasEve.plus({ days: 1 })
+
   const payload = [
     {
       name: 'Julaften',
@@ -13,7 +15,7 @@ const getDays = startYear => {
     },
     {
       name: 'Juledag',
-      date: christmasEve.plus({ days: 1 }),
+      date: christmasDay,
       color: 'white',
       id: '2-christmas',
     },
@@ -23,6 +25,12 @@ const getDays = startYear => {
       date: christmasEve.plus({ day: 2 }),
       color: 'red',
       id: '3-christmas',
+    },
+    {
+      name: 'Romjulssøndag',
+      date: christmasDay.plus({ days: (7 - christmasDay.weekday) % 7 }),
+      color: 'white',
+      id: 'christmas-sunday',
     },
     {
       name: 'Nyttårsaften',

@@ -123,6 +123,26 @@ const readingsList = new function() {
     ],
   }
 
+  this['Romjulssøndag'] = {
+    I: [
+      'Sal 1,1-6',
+      '1 Tim 3,16',
+      'Matt 2,13-15',
+    ],
+    II: [
+      '2 Mos 1,15-21',
+      'Apg 7,17-22',
+      'Luk 2,36-38',
+    ],
+    III: [
+      'Jes 66,10-13',
+      'Rom 11,33-36',
+      'Luk 2,25-35',
+    ],
+    F: [
+      'Luk 2,22-40',    ],
+  }
+
   this['Nyttårsaften'] = {
     I: [
       'Fork 3,1-2.4-7.11a',
@@ -1321,6 +1341,9 @@ const readingsList = new function() {
   }
   this['26. Søndag i Treenighetstiden'] = {
     ...this['4. Søndag i Åpenbaringstiden'],
+  }
+  this['27. Søndag i Treenighetstiden'] = {
+    ...this['3. Søndag i Åpenbaringstiden'],
   }
   this['Kristi kongedag'] = {
     I: [

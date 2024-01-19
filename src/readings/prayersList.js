@@ -85,7 +85,7 @@ som med deg og Den hellige ånd lever og råder,
 én sann Gud fra evighet til evighet.
 Amen.`
 
-  this['RomjulsSøndag'] = `
+  this['Romjulssøndag'] = `
 Nådige Gud,
 du lot din Sønn bli et sårbart menneske.
 Vi ber deg:
