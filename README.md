@@ -89,7 +89,7 @@ You can also include `commemorative: false` in the object passed as argument to 
 findByDate({query: '2022-02-06', commemorative: false}) // Only the day 6. january 2022
 ```
 
-## findByName({query, startYear, commemorative})
+## findByName({query, startYear, commemorative, method})
 ```js
 findByName({query: '3 åpenbaring'})
 ```
@@ -99,7 +99,15 @@ Example with start year
 ```js
 findByName({query: '3 åpenbaring', startYear : 2021})
 ```
-The query matched with regex.
+
+### Regex of Fuzzy Search
+
+By default findByName now uses [Fuzzy Search](https://www.npmjs.com/package/fuzzy-search) for better searching.
+This can be channged using `{ method }`. The options are `{ method: 'regex'}` or
+`{ method: 'fuzzy' }`. The default if no method is specified is `{ method:
+'fuzzy' }`
+
+Using `method: 'regex'` The query matched with regex.
 `.` gets escaped to `.*`
 Samee goes for `-`and `_`gets escaped to `.*`
 

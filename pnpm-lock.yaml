@@ -1,20 +1,31 @@
-lockfileVersion: 5.4
+lockfileVersion: '6.0'
 
-specifiers:
-  computus: ^1.0.5
-  luxon: ^2.2.0
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
-  computus: 1.0.6
-  luxon: 2.3.0
+  computus:
+    specifier: ^1.0.5
+    version: 1.0.6
+  fuzzy-search:
+    specifier: ^3.2.1
+    version: 3.2.1
+  luxon:
+    specifier: ^2.2.0
+    version: 2.3.0
 
 packages:
 
-  /computus/1.0.6:
+  /computus@1.0.6:
     resolution: {integrity: sha512-6ZC9IMwK+dhckGuMxEglQE3Yz7NKLRCbgNycfViOpuIy0H8BCErZC5qN9dW2je9fRm8s65qVVZ0ewfeVGKS2fw==}
     dev: false
 
-  /luxon/2.3.0:
+  /fuzzy-search@3.2.1:
+    resolution: {integrity: sha512-vAcPiyomt1ioKAsAL2uxSABHJ4Ju/e4UeDM+g1OlR0vV4YhLGMNsdLNvZTpEDY4JCSt0E4hASCNM5t2ETtsbyg==}
+    dev: false
+
+  /luxon@2.3.0:
     resolution: {integrity: sha512-gv6jZCV+gGIrVKhO90yrsn8qXPKD8HYZJtrUDSfEbow8Tkw84T9OnCyJhWvnJIaIF/tBuiAjZuQHUt1LddX2mg==}
     engines: {node: '>=12'}
     dev: false

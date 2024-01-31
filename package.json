@@ -25,6 +25,7 @@
   "license": "ISC",
   "dependencies": {
     "computus": "^1.0.5",
+    "fuzzy-search": "^3.2.1",
     "luxon": "^2.2.0"
   }
 }
