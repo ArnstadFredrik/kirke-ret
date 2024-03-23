@@ -10,13 +10,13 @@ const getDays = startYear => {
     {
       name: 'Skjærtorsdag',
       date: computus.minus({ days: 3 }),
-      color: 'white',
+      color: 'purple',
       id: 'easter-thursdag',
     },
     {
       name: 'Langfredag',
       date: computus.minus({ day: 2 }),
-      color: 'white',
+      color: 'purple',
       id: 'easter-friday',
     },
     {
